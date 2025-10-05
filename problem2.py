@@ -14,6 +14,9 @@ def celsius_to_fahrenheit(celsius):
     Returns:
         float: Temperature in Fahrenheit
     """
+    fahrenheit = (float(celsius) * 9/5) + 32
+    return float(fahrenheit) 
+    
     # TODO: Implement this function
     pass
 
