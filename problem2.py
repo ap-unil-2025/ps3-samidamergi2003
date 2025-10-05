@@ -32,6 +32,8 @@ def fahrenheit_to_celsius(fahrenheit):
     Returns:
         float: Temperature in Celsius
     """
+    celsius = (fahrenheit - 32) * (5/9)
+    return float(celsius)
     # TODO: Implement this function
     pass
 
@@ -46,6 +48,21 @@ def temperature_converter():
     """
     print("Temperature Converter")
     print("-" * 30)
+
+    Temperaturevalue = float(input("Enter the value of the temperature"))
+    currentUnit = input("F or C")
+    if currentUnit == "F":
+        Celsius2 = (Temperaturevalue - 32) * (5/9)
+        return Celsius2
+        print("the temperature in celsius is equal to :" ,Celsius2)
+
+    elif currentUnit == "C":
+        Fahrenheit2 =(Temperaturevalue * 9/5) + 32  
+        return Fahrenheit2
+        print("the temperature in Fahrenheit is equal to :", Fahrenheit2)
+    else:
+        print("Error : you have to enter C or F")
+        
 
     # TODO: Implement the interactive converter
     # Remember to:
